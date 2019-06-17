@@ -1,0 +1,21 @@
+abstract class Tier {
+    private String artName;
+
+    Tier(String artName) {
+        this.artName = artName;
+    }
+
+    abstract public int beinanzahl();
+
+    abstract public boolean gefahrfuermensch();
+
+    public void druckeEigenschaften() {
+        System.out.println("" + artName);
+        
+            System.out.println("" + this.beinanzahl());
+            System.out.println("" + this.gefahrfuermensch());
+        
+
+        }
+    }
+
