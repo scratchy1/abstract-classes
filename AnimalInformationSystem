@@ -1,0 +1,28 @@
+public class AnimalInformationSystem2{
+
+    public static void tue(String tier) {
+     String artName = tier;
+        Tier tier2 = null;
+        if (artName.equals("Pinguin")) {
+            tier2 = new Pinguin();
+        }
+        if (artName.equals("Löwe")) {
+            tier2 = new Loewe();
+        }
+        if (artName.equals("Schmetterling")) {
+            tier2 = new Schmetterling();
+        }
+        /* ... */
+        if (tier2 == null) {
+            System.out.println("Das Tier " + artName + " wurde noch nicht implementiert.");
+        } else {
+            System.out.println(artName + ":");
+            tier2.druckeEigenschaften();
+        }
+    }
+
+    public static void main(String[] args) {
+       String s1 = "Löwe";
+       tue(s1);
+    }
+}
